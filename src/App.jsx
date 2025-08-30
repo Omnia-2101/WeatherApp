@@ -124,14 +124,11 @@ function App() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-blue-200 to-blue-500 flex flex-col items-center justify-start px-2 py-6">
       <div className="w-full max-w-md flex flex-col items-center">
-<<<<<<< HEAD
         <img
           src="/atmospheric-conditions.png"
           alt="Atmospheric Conditions Logo"
           className="w-20 h-20 mb-4 drop-shadow-lg"
         />
-=======
->>>>>>> 8ce066d75cee17a993ae655c00d7d201a07c5488
         <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-blue-900 mb-8 drop-shadow-lg text-center">
           🌤 Weather Dashboard
         </h1>
