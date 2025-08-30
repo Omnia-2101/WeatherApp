@@ -1,5 +1,6 @@
 import React from "react";
 
+<<<<<<< HEAD
 // Map weather description to icon type
 function getIconType(description) {
   if (!description) return "sunny";
@@ -88,16 +89,29 @@ function WeatherSVG({ type }) {
 function WeatherCard({ weather }) {
   if (!weather) return null;
   const iconType = getIconType(weather.description || weather.condition);
+=======
+function WeatherCard({ weather }) {
+  if (!weather) return null;
+>>>>>>> 8ce066d75cee17a993ae655c00d7d201a07c5488
 
   return (
     <div className="bg-white/90 p-6 rounded-2xl shadow-xl text-center w-full max-w-xs sm:max-w-sm md:max-w-md mx-auto transition-all">
       <h2 className="text-2xl font-semibold mb-2 text-blue-800">
         {weather.city}, {weather.country}
       </h2>
+<<<<<<< HEAD
       <WeatherSVG type={iconType} />
       <p className="capitalize mb-2 text-lg text-gray-700">
         {weather.description || weather.condition}
       </p>
+=======
+      <img
+        src={`https://openweathermap.org/img/wn/${weather.icon}@2x.png`}
+        alt={weather.condition}
+        className="mx-auto mb-2 w-24 h-24"
+      />
+      <p className="capitalize mb-2 text-lg text-gray-700">{weather.condition}</p>
+>>>>>>> 8ce066d75cee17a993ae655c00d7d201a07c5488
       <div className="flex justify-center gap-4 text-lg font-medium mt-4">
         <span>🌡 {weather.temperature}°C</span>
         <span>💧 {weather.humidity}%</span>

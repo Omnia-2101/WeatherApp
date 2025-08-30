@@ -1,13 +1,20 @@
 {
   "builds": [
     {
+<<<<<<< HEAD
       "src": "package.json",
+=======
+      "src": "vite.config.js",
+>>>>>>> 8ce066d75cee17a993ae655c00d7d201a07c5488
       "use": "@vercel/static-build",
       "config": { "distDir": "dist" }
     }
   ],
   "routes": [
+<<<<<<< HEAD
     { "src": "/(.*\\.(js|css|png|jpg|svg|ico|json|txt|woff2?))", "dest": "/$1" },
+=======
+>>>>>>> 8ce066d75cee17a993ae655c00d7d201a07c5488
     { "src": "/(.*)", "dest": "/" }
   ]
 }
